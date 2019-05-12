@@ -1,0 +1,22 @@
+[
+    {
+        "id"  : 1,
+        "nome" : "botafogo",
+        "nomeCompleto" : "Botafogo FR"
+    },
+    {
+        "id"  : 2,
+        "nome" : "flamengo",
+        "nomeCompleto" : "CR Flamengo"
+    },
+    {
+        "id"  : 3,
+        "nome" : "fluminense",
+        "nomeCompleto" : "Fluminense FC"
+    },
+    {
+        "id"  : 4,
+        "nome" : "vasco",
+        "nomeCompleto" : "CR Vasco da Gama"
+    }
+]
