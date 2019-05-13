@@ -1,218 +1,223 @@
-[
-    {
-        "nome": "Diego Alves",
-        "habilidades" : {
-            "penalti": 15,
-            "posicionamento" : 12,
-            "defende" : 14,
-            "espalma" : 14,
-            "espalmaFora" : 14,
-            "jogoAereo" : 17,
-            "reposicao" : 14
+{
+    "nome" : "Botafogo",
+    "cor1" : "black",
+    "cor2" : "white",
+    "jogadores" : [
+        {
+            "nome": "Diego Alves",
+            "habilidades" : {
+                "penalti": 15,
+                "posicionamento" : 12,
+                "defende" : 14,
+                "espalma" : 14,
+                "espalmaFora" : 14,
+                "jogoAereo" : 17,
+                "reposicao" : 14
+            },
+            "posicao" : 1,
+            "camisa":1,
+            "acoes": {
+                "1" : "defende",
+                "2" : "defende",
+                "3" : "espalma",
+                "4" : "espalma", 
+                "5" : "espalmaFora",
+                "6" : "espalmaFora"
+            },
+            "time" : "timeHome"
         },
-        "posicao" : 1,
-        "camisa":1,
-        "acoes": {
-            "1" : "defende",
-            "2" : "defende",
-            "3" : "espalma",
-            "4" : "espalma", 
-            "5" : "espalmaFora",
-            "6" : "espalmaFora"
+        {
+            "nome": "Juan",
+            "habilidades" : {
+                "forca" : 13,
+                "toque" : 13,
+                "lancamento" : 10,
+                "chute" : 6,
+                "drible" : 4,
+                "carrinho" : 14,
+                "corrida" : 5,
+                "jogoAereo" : 12
+        
+            },
+            "posicao" : 1,
+            "camisa" : 2,
+            "acoes": {
+                "1" : "carrinho",
+                "2" : "corrida",
+                "3" : "chute",
+                "4" : "drible",
+                "5" : "toque",
+                "6" : "disputa"
+            },
+            "time" : "timeHome"
         },
-        "time" : "timeHome"
-    },
-    {
-        "nome": "Juan",
-        "habilidades" : {
-            "forca" : 13,
-            "toque" : 13,
-            "lancamento" : 10,
-            "chute" : 6,
-            "drible" : 4,
-            "carrinho" : 14,
-            "corrida" : 5,
-            "jogoAereo" : 12
-    
+        {
+            "nome": "Leo Duarte",
+            "habilidades" : {
+                "forca" : 15,
+                "toque" : 11,
+                "lancamento" : 6,
+                "chute" : 4,
+                "drible" : 2,
+                "carrinho" : 11,
+                "corrida" : 7,
+                "jogoAereo" : 14
+            },
+            "posicao" : 2,
+            "camisa" : 3,
+            "acoes": {
+                "1" : "carrinho",
+                "2" : "corrida",
+                "3" : "chute",
+                "4" : "drible",
+                "5" : "toque",
+                "6" : "disputa"
+            },
+            "time" : "timeHome"
         },
-        "posicao" : 1,
-        "camisa" : 2,
-        "acoes": {
-            "1" : "carrinho",
-            "2" : "corrida",
-            "3" : "chute",
-            "4" : "drible",
-            "5" : "toque",
-            "6" : "disputa"
+        {
+            "nome": "Cuellar",
+            "habilidades" : {
+                "forca" : 15,
+                "toque" : 11,
+                "lancamento" : 13,
+                "chute" : 8,
+                "drible" : 7,
+                "carrinho" : 12,
+                "corrida" : 7,
+                "jogoAereo" : 9
+            },
+            "posicao" : 3,
+            "camisa" : 4,
+            "acoes": {
+                "1" : "carrinho",
+                "2" : "corrida",
+                "3" : "chute",
+                "4" : "drible",
+                "5" : "toque",
+                "6" : "toque"
+            },
+            "time" : "timeHome"
         },
-        "time" : "timeHome"
-    },
-    {
-        "nome": "Leo Duarte",
-        "habilidades" : {
-            "forca" : 15,
-            "toque" : 11,
-            "lancamento" : 6,
-            "chute" : 4,
-            "drible" : 2,
-            "carrinho" : 11,
-            "corrida" : 7,
-            "jogoAereo" : 14
+        {
+            "nome": "Lucas Paquetá",
+            "habilidades" : {
+                "forca" : 13,
+                "toque" : 14,
+                "lancamento" : 12,
+                "chute" : 15,
+                "drible" : 14,
+                "carrinho" : 14,
+                "corrida" : 12,
+                "jogoAereo" : 13
+            },
+            "posicao" : 4,
+            "camisa" : 5,
+            "acoes": {
+                "1" : "carrinho",
+                "2" : "corrida",
+                "3" : "chute",
+                "4" : "drible",
+                "5" : "toque",
+                "6" : "lancamento"
+            },
+            "time" : "timeHome"
         },
-        "posicao" : 2,
-        "camisa" : 3,
-        "acoes": {
-            "1" : "carrinho",
-            "2" : "corrida",
-            "3" : "chute",
-            "4" : "drible",
-            "5" : "toque",
-            "6" : "disputa"
+        {
+            "nome": "Diego",
+            "habilidades" : {
+                "forca" : 13,
+                "toque" : 14,
+                "lancamento" : 12,
+                "chute" : 13,
+                "drible" : 12,
+                "carrinho" : 14,
+                "corrida" : 12,
+                "jogoAereo" : 7
+            },
+            "posicao" : 5,
+            "camisa" : 6,
+            "acoes": {
+                "1" : "carrinho",
+                "2" : "corrida",
+                "3" : "chute",
+                "4" : "drible",
+                "5" : "toque",
+                "6" : "lancamento"
+            },
+            "time" : "timeHome"
         },
-        "time" : "timeHome"
-    },
-    {
-        "nome": "Cuellar",
-        "habilidades" : {
-            "forca" : 15,
-            "toque" : 11,
-            "lancamento" : 13,
-            "chute" : 8,
-            "drible" : 7,
-            "carrinho" : 12,
-            "corrida" : 7,
-            "jogoAereo" : 9
+        {
+            "nome": "Everton Ribeiro",
+            "habilidades" : {
+                "forca" : 11,
+                "toque" : 12,
+                "lancamento" : 10,
+                "chute" : 10,
+                "drible" : 4,
+                "carrinho" : 14,
+                "corrida" : 13,
+                "jogoAereo" : 7
+            },
+            "posicao" : 6,
+            "camisa" : 7,
+            "acoes": {
+                "1" : "carrinho",
+                "2" : "corrida",
+                "3" : "chute",
+                "4" : "drible",
+                "5" : "toque",
+                "6" : "toque"
+            },
+            "time" : "timeHome"
         },
-        "posicao" : 3,
-        "camisa" : 4,
-        "acoes": {
-            "1" : "carrinho",
-            "2" : "corrida",
-            "3" : "chute",
-            "4" : "drible",
-            "5" : "toque",
-            "6" : "toque"
+        {
+            "nome": "Vitinho",
+            "habilidades" : {
+                "forca" : 11,
+                "toque" : 14,
+                "lancamento" : 12,
+                "chute" : 6,
+                "drible" : 4,
+                "carrinho" : 14,
+                "corrida" : 12,
+                "jogoAereo" : 12
+            },
+            "posicao" : 7,
+            "camisa" : 8,
+            "acoes": {
+                "1" : "carrinho",
+                "2" : "corrida",
+                "3" : "chute",
+                "4" : "drible",
+                "5" : "toque",
+                "6" : "chute"
+            },
+            "time" : "timeHome"
         },
-        "time" : "timeHome"
-    },
-    {
-        "nome": "Lucas Paquetá",
-        "habilidades" : {
-            "forca" : 13,
-            "toque" : 14,
-            "lancamento" : 12,
-            "chute" : 15,
-            "drible" : 14,
-            "carrinho" : 14,
-            "corrida" : 12,
-            "jogoAereo" : 13
-        },
-        "posicao" : 4,
-        "camisa" : 5,
-        "acoes": {
-            "1" : "carrinho",
-            "2" : "corrida",
-            "3" : "chute",
-            "4" : "drible",
-            "5" : "toque",
-            "6" : "lancamento"
-        },
-        "time" : "timeHome"
-    },
-    {
-        "nome": "Diego",
-        "habilidades" : {
-            "forca" : 13,
-            "toque" : 14,
-            "lancamento" : 12,
-            "chute" : 13,
-            "drible" : 12,
-            "carrinho" : 14,
-            "corrida" : 12,
-            "jogoAereo" : 7
-        },
-        "posicao" : 5,
-        "camisa" : 6,
-        "acoes": {
-            "1" : "carrinho",
-            "2" : "corrida",
-            "3" : "chute",
-            "4" : "drible",
-            "5" : "toque",
-            "6" : "lancamento"
-        },
-        "time" : "timeHome"
-    },
-    {
-        "nome": "Everton Ribeiro",
-        "habilidades" : {
-            "forca" : 11,
-            "toque" : 12,
-            "lancamento" : 10,
-            "chute" : 10,
-            "drible" : 4,
-            "carrinho" : 14,
-            "corrida" : 13,
-            "jogoAereo" : 7
-        },
-        "posicao" : 6,
-        "camisa" : 7,
-        "acoes": {
-            "1" : "carrinho",
-            "2" : "corrida",
-            "3" : "chute",
-            "4" : "drible",
-            "5" : "toque",
-            "6" : "toque"
-        },
-        "time" : "timeHome"
-    },
-    {
-        "nome": "Vitinho",
-        "habilidades" : {
-            "forca" : 11,
-            "toque" : 14,
-            "lancamento" : 12,
-            "chute" : 6,
-            "drible" : 4,
-            "carrinho" : 14,
-            "corrida" : 12,
-            "jogoAereo" : 12
-        },
-        "posicao" : 7,
-        "camisa" : 8,
-        "acoes": {
-            "1" : "carrinho",
-            "2" : "corrida",
-            "3" : "chute",
-            "4" : "drible",
-            "5" : "toque",
-            "6" : "chute"
-        },
-        "time" : "timeHome"
-    },
-    {
-        "nome": "Uribe",
-        "habilidades" : {
-            "forca" : 13,
-            "toque" : 6,
-            "lancamento" : 3,
-            "chute" : 12,
-            "drible" : 4,
-            "carrinho" : 14,
-            "corrida" : 13,
-            "jogoAereo" : 14
-        },
-        "posicao" : 8,
-        "camisa" : 9,
-        "acoes": {
-            "1" : "carrinho",
-            "2" : "corrida",
-            "3" : "chute",
-            "4" : "drible",
-            "5" : "toque",
-            "6" : "chute"
-        },
-        "time" : "timeHome"
-    }
-]
+        {
+            "nome": "Uribe",
+            "habilidades" : {
+                "forca" : 13,
+                "toque" : 6,
+                "lancamento" : 3,
+                "chute" : 12,
+                "drible" : 4,
+                "carrinho" : 14,
+                "corrida" : 13,
+                "jogoAereo" : 14
+            },
+            "posicao" : 8,
+            "camisa" : 9,
+            "acoes": {
+                "1" : "carrinho",
+                "2" : "corrida",
+                "3" : "chute",
+                "4" : "drible",
+                "5" : "toque",
+                "6" : "chute"
+            },
+            "time" : "timeHome"
+        }
+    ]
+}

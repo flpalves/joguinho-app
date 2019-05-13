@@ -7,7 +7,7 @@
         </b-row>
         <b-row>
             <b-col md="3">
-                <select v-model="timeHome" class="form-control">
+                <select v-model="nomeTimeHome" class="form-control">
                     <option @key="time.id" v-for="time in times" :value="time.nome">{{time.nomeCompleto}}</option>
                 </select>
             </b-col>
@@ -15,7 +15,7 @@
                 <button class="btn btn-secondary btn-block" @click="this.getClubes" >Carregar Time</button>
             </b-col>
             <b-col md="3">
-                <select v-model="timeAway" class="form-control">
+                <select v-model="nomeTimeAway" class="form-control">
                     <option @key="time.id" v-for="time in times" :value="time.nome">{{time.nomeCompleto}}</option>
                 </select>
             </b-col>
@@ -23,7 +23,7 @@
         <b-row>
             <b-col md="3">
                 <ul class="list-group list-group-flush"> 
-                    <li class="list-group-item" v-for="jogador in jogadoresHome">{{jogador.camisa}}-{{jogador.nome}}</li>
+                    <li class="list-group-item" v-for="jogador in timeHome.jogadores">{{jogador.camisa}}-{{jogador.nome}}</li>
                 </ul>
             </b-col>
             <b-col md="6">
@@ -31,7 +31,7 @@
             </b-col>
             <b-col md="3">
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item" v-for="jogador in jogadoresAway">{{jogador.camisa}}-{{jogador.nome}}</li>
+                    <li class="list-group-item" v-for="jogador in timeAway.jogadores">{{jogador.camisa}}-{{jogador.nome}}</li>
                 </ul>
             </b-col>
         </b-row> 
@@ -72,9 +72,9 @@ export default {
         },
         getClubeHome : function(){
             axios
-                .get(`/static/clubes/${this.timeHome}.json`)
+                .get(`/static/clubes/${this.nomeTimeHome}.json`)
                 .then(response => {
-                    this.jogadoresHome = response.data
+                    this.timeHome = response.data
                 })
                 .catch(error => {
                     console.log(error)
@@ -84,9 +84,10 @@ export default {
         },
         getClubeAway : function(){
             axios
-                .get(`/static/clubes/${this.timeAway}.json`)
+                .get(`/static/clubes/${this.nomeTimeAway}.json`)
                 .then(response => {
-                    this.jogadoresAway = response.data 
+                    
+                    this.timeAway = response.data 
                 })
                 .catch(error => {
                     console.log(error)
@@ -102,10 +103,10 @@ export default {
     data: function(){
         return {
             times : {},
-            timeHome : '',
-            timeAway : '',
-            jogadoresHome : [],
-            jogadoresAway : [],
+            nomeTimeHome : '',
+            nomeTimeAway : '',
+            timeHome : {},
+            timeAway : {},
         }
     }
 }
