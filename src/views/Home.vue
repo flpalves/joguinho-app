@@ -111,6 +111,8 @@ export default {
         },
         startGame : function(){
             var match = window.setJogo(this.timeHome, this.timeAway);
+            window.jTimeHome = this.timeHome.jogadores;
+            window.jTimeAway = this.timeAway.jogadores;
             window.controlaJogo();
         }
     },
