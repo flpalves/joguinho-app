@@ -40,6 +40,16 @@
                 <hr />
             </b-col>
         </b-row>
+        <b-row>
+            <b-col md="12">
+                <div id="result"></div>
+            </b-col>
+        </b-row>
+        <b-row>
+            <b-col md="12">
+                <button v-if="timeHome.nome && timeAway.nome" class="btn btn-primary" @click="startGame()">Começa</button>
+            </b-col>
+        </b-row>
     </b-container>
 </template> 
 
@@ -98,6 +108,10 @@ export default {
         getClubes : function(){
             this.getClubeHome();
             this.getClubeAway();
+        },
+        startGame : function(){
+            var match = window.setJogo(this.timeHome, this.timeAway);
+            window.controlaJogo();
         }
     },
     data: function(){

@@ -12,7 +12,7 @@
   text-align: center;
   color: #2c3e50;
 }
-#nav {
+#nav { 
   padding: 30px;
   a {
     font-weight: bold;
@@ -23,3 +23,10 @@
   }
 }
 </style>
+<script>
+
+
+export default {
+  
+}
+</script>
