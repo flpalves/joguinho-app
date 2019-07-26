@@ -37,7 +37,7 @@
         </b-row> 
         <b-row>
             <b-col>
-                <hr />
+                <hr /> 
             </b-col>
         </b-row>
         <b-row>
@@ -106,14 +106,23 @@ export default {
                 .finally(() => this.loading = false)
         },
         getClubes : function(){
-            this.getClubeHome();
+            this.getClubeHome(); 
             this.getClubeAway();
         },
         startGame : function(){
+
             var match = window.setJogo(this.timeHome, this.timeAway);
             window.jTimeHome = this.timeHome.jogadores;
             window.jTimeAway = this.timeAway.jogadores;
-            window.controlaJogo();
+            
+            var interval = setInterval(foo, 1000);
+            function foo() {
+                if (jogo.encerrado){
+                    clearInterval(interval);
+                }    
+                window.controlaJogo();   
+            }
+
         }
     },
     data: function(){
