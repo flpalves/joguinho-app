@@ -2,7 +2,7 @@
     "nome" : "Vasco",
     "cor1" : "white",
     "cor2" : "black",
-    "jogadores" : [
+    "jogadores" : [ 
         {
             "nome": "Diego Alves",
             "habilidades" : {
