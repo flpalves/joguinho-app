@@ -4,7 +4,7 @@
     "cor2" : "white",
     "jogadores" : [
         {
-            "nome": "Diego Alves",
+            "nome": "Gatito",
             "habilidades" : {
                 "penalti": 15,
                 "posicionamento" : 12,
@@ -27,7 +27,7 @@
             "time" : "timeHome"
         },
         {
-            "nome": "Juan",
+            "nome": "Carli",
             "habilidades" : {
                 "forca" : 13,
                 "toque" : 13,
@@ -52,7 +52,7 @@
             "time" : "timeHome"
         },
         {
-            "nome": "Leo Duarte",
+            "nome": "Gabriel",
             "habilidades" : {
                 "forca" : 15,
                 "toque" : 11,
@@ -76,7 +76,7 @@
             "time" : "timeHome"
         },
         {
-            "nome": "Cuellar",
+            "nome": "Gustavo Bochecha",
             "habilidades" : {
                 "forca" : 15,
                 "toque" : 11,
@@ -100,7 +100,7 @@
             "time" : "timeHome"
         },
         {
-            "nome": "Lucas Paquetá",
+            "nome": "Cicero",
             "habilidades" : {
                 "forca" : 13,
                 "toque" : 14,
@@ -124,7 +124,7 @@
             "time" : "timeHome"
         },
         {
-            "nome": "Diego",
+            "nome": "Alex Santana",
             "habilidades" : {
                 "forca" : 13,
                 "toque" : 14,
@@ -148,7 +148,7 @@
             "time" : "timeHome"
         },
         {
-            "nome": "Everton Ribeiro",
+            "nome": "Luis Fernando",
             "habilidades" : {
                 "forca" : 11,
                 "toque" : 12,
@@ -172,7 +172,7 @@
             "time" : "timeHome"
         },
         {
-            "nome": "Vitinho",
+            "nome": "Rodrigo Pimpão",
             "habilidades" : {
                 "forca" : 11,
                 "toque" : 14,
@@ -194,9 +194,9 @@
                 "6" : "chute"
             },
             "time" : "timeHome"
-        },
+        }, 
         {
-            "nome": "Uribe",
+            "nome": "Diego Souza",
             "habilidades" : {
                 "forca" : 13,
                 "toque" : 6,

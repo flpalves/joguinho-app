@@ -4,7 +4,7 @@
     "cor2" : "black",
     "jogadores" : [ 
         {
-            "nome": "Diego Alves",
+            "nome": "Fernando Miguel",
             "habilidades" : {
                 "penalti": 15,
                 "posicionamento" : 12,
@@ -27,7 +27,7 @@
             "time" : "timeHome"
         },
         {
-            "nome": "Juan",
+            "nome": "Henriquez",
             "habilidades" : {
                 "forca" : 13,
                 "toque" : 13,
@@ -52,7 +52,7 @@
             "time" : "timeHome"
         },
         {
-            "nome": "Leo Duarte",
+            "nome": "Leandro Castan",
             "habilidades" : {
                 "forca" : 15,
                 "toque" : 11,
@@ -76,7 +76,7 @@
             "time" : "timeHome"
         },
         {
-            "nome": "Cuellar",
+            "nome": "Richard",
             "habilidades" : {
                 "forca" : 15,
                 "toque" : 11,
@@ -100,7 +100,7 @@
             "time" : "timeHome"
         },
         {
-            "nome": "Lucas Paquetá",
+            "nome": "Raul",
             "habilidades" : {
                 "forca" : 13,
                 "toque" : 14,
@@ -124,7 +124,7 @@
             "time" : "timeHome"
         },
         {
-            "nome": "Diego",
+            "nome": "Yago Pikachu",
             "habilidades" : {
                 "forca" : 13,
                 "toque" : 14,
@@ -148,7 +148,7 @@
             "time" : "timeHome"
         },
         {
-            "nome": "Everton Ribeiro",
+            "nome": "Valdivia",
             "habilidades" : {
                 "forca" : 11,
                 "toque" : 12,
@@ -172,7 +172,7 @@
             "time" : "timeHome"
         },
         {
-            "nome": "Vitinho",
+            "nome": "Bruno Cesar",
             "habilidades" : {
                 "forca" : 11,
                 "toque" : 14,
@@ -196,7 +196,7 @@
             "time" : "timeHome"
         },
         {
-            "nome": "Uribe",
+            "nome": "Marrony",
             "habilidades" : {
                 "forca" : 13,
                 "toque" : 6,
