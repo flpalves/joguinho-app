@@ -402,9 +402,10 @@ function corner(){
 }
 
 function rifaBola(posicaoAtk){
+    
     resetarTime();
     var goleiro = jogo[jogo.posseBola.timeDef].jogadores[0];
-    // debugger;
+    debugger;
     var envolvidos = buscaJogadorCampo(posicaoAtk);
     envolvidos = envolvidos.atk.concat(envolvidos.def);
     if(envolvidos.length == 0){
@@ -428,8 +429,8 @@ function rifaBola(posicaoAtk){
         jogo.posseBola.jogador = getIndexByCamisa( jogo[jogo.posseBola.timeAtk].jogadores, envolvidos[comBola].camisa );
         jogo.posseBola.posicao = envolvidos[comBola].posicao;
     } else{
-        jogo.posseBola.jogador = getIndexByCamisa( jogo[jogo.posseBola.timeDef].jogadores, envolvidos[comBola].camisa );
-        jogo.posseBola.posicao = envolvidos[comBola].posicao;
+        // jogo.posseBola.jogador = getIndexByCamisa( jogo[jogo.posseBola.timeDef].jogadores, envolvidos[comBola].camisa );
+        // jogo.posseBola.posicao = envolvidos[comBola].posicao;
 
         invertePosse(envolvidos[comBola]);
         
@@ -488,7 +489,7 @@ function tiroMeta(goleiro){
     
 }
 function gol(){
-    debugger;
+    // debugger;
     printaAcao('OLHUGOOL');
     
     if(jogo.posseBola.timeAtk == 'timeHome'){

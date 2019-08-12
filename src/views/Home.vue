@@ -84,7 +84,12 @@ export default {
             axios
                 .get(`/static/clubes/${this.nomeTimeHome}.json`)
                 .then(response => {
-                    this.timeHome = response.data
+                    
+                    response.data.jogadores = response.data.jogadores.map(function(jogador){
+                        jogador.time = "timeHome";
+                        return jogador
+                    });
+                    this.timeHome = response.data 
                 })
                 .catch(error => {
                     console.log(error)
@@ -97,7 +102,12 @@ export default {
                 .get(`/static/clubes/${this.nomeTimeAway}.json`)
                 .then(response => {
                     
+                    response.data.jogadores = response.data.jogadores.map(function(jogador){
+                        jogador.time = "timeAway";
+                        return jogador
+                    });
                     this.timeAway = response.data 
+
                 })
                 .catch(error => {
                     console.log(error)
@@ -105,7 +115,8 @@ export default {
                 })
                 .finally(() => this.loading = false)
         },
-        getClubes : function(){
+        getClubes : function(){            
+            
             this.getClubeHome(); 
             this.getClubeAway();
         },
