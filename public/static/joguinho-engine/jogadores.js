@@ -337,7 +337,8 @@ function carrinho(jogadorDef){
         printaAcao('carrinho bem executado e '+jogadorDef.nome+' rouba a bola');
         invertePosse(jogadorDef);
     } else{
-        falta(jogadorDef);
+        printaAcao(''+jogadorDef.nome+' tenta o carrinho e faz a falta');
+        return falta(jogadorDef);
     }
     console.log('carrinho')
     return true;
@@ -350,6 +351,7 @@ function carrinho(jogadorDef){
 function disputa(pAtk, pDef){
     // debugger;
     //se for chamado sem jogador de atk, é o que está com a bola
+    printaAcao(pDef.nome + 'divide a bola com '+pAtk.nome);
     if(!pAtk){
         pAtk = jogo[jogo.posseBola.timeAtk].jogadores[jogo.posseBola.jogador];
     }
@@ -408,8 +410,8 @@ function corner(){
     var envolvidos = buscaJogadorCampo(8);
     var pAtk = envolvidos.atk[randomNumber(envolvidos.atk.length)];
     var pDef = envolvidos.def[randomNumber(envolvidos.def.length)];
-    var dadoAtk = pAtk.habilidades.forca + randomNumber(25);
-    var dadoDef = pDef.habilidades.forca + randomNumber(25);
+    var dadoAtk = pAtk.habilidades.jogoAereo + randomNumber(25);
+    var dadoDef = pDef.habilidades.jogoAereo + randomNumber(25);
     printaAcao('É escanteio!');
     // printaAcao('');
     if(dadoAtk > dadoDef){
@@ -596,12 +598,11 @@ function espalma(jogadorBola){
 }
 
 function espalmaFora(){
-    //debugger;
+    debugger;
     var timeBola = jogo[jogo.posseBola.timeAtk].jogadores;
     var jogadorBola = timeBola[jogo.posseBola.jogador];
     var goleiro = jogo[jogo.posseBola.timeDef].jogadores[0];
 
-    
     var forcaGoleiro = goleiro.habilidades.espalmaFora + randomNumber(20);
     var forcaChute = jogadorBola.habilidades.chute + randomNumber(20); 
 

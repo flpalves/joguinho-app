@@ -18,5 +18,10 @@
         "id"  : 4,
         "nome" : "vasco",
         "nomeCompleto" : "CR Vasco da Gama"
+    },
+    {
+        "id"  : 5,
+        "nome" : "saoPaulo",
+        "nomeCompleto" : "São Paulo FC"
     }
 ]

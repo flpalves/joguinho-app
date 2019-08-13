@@ -8,10 +8,10 @@
             "habilidades" : {
                 "penalti": 15,
                 "posicionamento" : 12,
-                "defende" : 14,
-                "espalma" : 14,
-                "espalmaFora" : 14,
-                "jogoAereo" : 17,
+                "defende" : 12,
+                "espalma" : 12,
+                "espalmaFora" : 12,
+                "jogoAereo" : 13,
                 "reposicao" : 14
             },
             "posicao" : 1,
@@ -27,16 +27,16 @@
             "time" : "timeHome"
         },
         {
-            "nome": "Juan",
+            "nome": "Pablo Mari",
             "habilidades" : {
                 "forca" : 13,
-                "toque" : 13,
-                "lancamento" : 10,
-                "chute" : 6,
-                "drible" : 4,
-                "carrinho" : 14,
-                "corrida" : 5,
-                "jogoAereo" : 12
+                "toque" : 10,
+                "lancamento" : 6,
+                "chute" : 4,
+                "drible" : 2,
+                "carrinho" : 13,
+                "corrida" : 3,
+                "jogoAereo" : 13
         
             },
             "posicao" : 1,
@@ -52,15 +52,15 @@
             "time" : "timeHome"
         },
         {
-            "nome": "Leo Duarte",
+            "nome": "Rodrigo Caio",
             "habilidades" : {
-                "forca" : 15,
-                "toque" : 11,
-                "lancamento" : 6,
-                "chute" : 4,
+                "forca" : 12,
+                "toque" : 12,
+                "lancamento" : 8,
+                "chute" : 3,
                 "drible" : 2,
-                "carrinho" : 11,
-                "corrida" : 7,
+                "carrinho" : 14,
+                "corrida" : 8,
                 "jogoAereo" : 14
             },
             "posicao" : 2,
@@ -81,11 +81,11 @@
                 "forca" : 15,
                 "toque" : 11,
                 "lancamento" : 13,
-                "chute" : 8,
-                "drible" : 7,
-                "carrinho" : 12,
-                "corrida" : 7,
-                "jogoAereo" : 9
+                "chute" : 6,
+                "drible" : 6,
+                "carrinho" : 13,
+                "corrida" : 8,
+                "jogoAereo" : 7
             },
             "posicao" : 3,
             "camisa" : 4,
@@ -100,16 +100,16 @@
             "time" : "timeHome"
         },
         {
-            "nome": "Lucas Paquetá",
+            "nome": "Gerson",
             "habilidades" : {
-                "forca" : 13,
-                "toque" : 14,
-                "lancamento" : 12,
-                "chute" : 15,
-                "drible" : 14,
-                "carrinho" : 14,
+                "forca" : 10,
+                "toque" : 13,
+                "lancamento" : 13,
+                "chute" : 13,
+                "drible" : 10,
+                "carrinho" : 11,
                 "corrida" : 12,
-                "jogoAereo" : 13
+                "jogoAereo" : 6
             },
             "posicao" : 4,
             "camisa" : 5,
@@ -126,14 +126,14 @@
         {
             "nome": "Diego",
             "habilidades" : {
-                "forca" : 13,
+                "forca" : 10,
                 "toque" : 14,
-                "lancamento" : 12,
-                "chute" : 13,
-                "drible" : 12,
-                "carrinho" : 14,
-                "corrida" : 12,
-                "jogoAereo" : 7
+                "lancamento" : 11,
+                "chute" : 11,
+                "drible" : 10,
+                "carrinho" : 12,
+                "corrida" : 9,
+                "jogoAereo" : 5
             },
             "posicao" : 5,
             "camisa" : 6,
@@ -151,13 +151,13 @@
             "nome": "Everton Ribeiro",
             "habilidades" : {
                 "forca" : 11,
-                "toque" : 12,
-                "lancamento" : 10,
-                "chute" : 10,
-                "drible" : 4,
-                "carrinho" : 14,
+                "toque" : 13,
+                "lancamento" : 9,
+                "chute" : 13,
+                "drible" : 14,
+                "carrinho" : 8,
                 "corrida" : 13,
-                "jogoAereo" : 7
+                "jogoAereo" : 5
             },
             "posicao" : 6,
             "camisa" : 7,
@@ -172,16 +172,16 @@
             "time" : "timeHome"
         },
         {
-            "nome": "Vitinho",
+            "nome": "Bruno Henrique",
             "habilidades" : {
-                "forca" : 11,
-                "toque" : 14,
-                "lancamento" : 12,
-                "chute" : 6,
-                "drible" : 4,
-                "carrinho" : 14,
-                "corrida" : 12,
-                "jogoAereo" : 12
+                "forca" : 10,
+                "toque" : 13,
+                "lancamento" : 11,
+                "chute" : 12,
+                "drible" : 13,
+                "carrinho" : 6,
+                "corrida" : 14,
+                "jogoAereo" : 10
             },
             "posicao" : 7,
             "camisa" : 8,
@@ -196,16 +196,16 @@
             "time" : "timeHome"
         },
         {
-            "nome": "Uribe",
+            "nome": "Gabigol",
             "habilidades" : {
-                "forca" : 13,
-                "toque" : 6,
-                "lancamento" : 3,
-                "chute" : 12,
-                "drible" : 4,
-                "carrinho" : 14,
-                "corrida" : 13,
-                "jogoAereo" : 14
+                "forca" : 10,
+                "toque" : 12,
+                "lancamento" : 6,
+                "chute" : 13,
+                "drible" : 11,
+                "carrinho" : 6,
+                "corrida" : 12,
+                "jogoAereo" : 11
             },
             "posicao" : 8,
             "camisa" : 9,

@@ -1,18 +1,18 @@
 {
-    "nome" : "Botafogo",
-    "cor1" : "black",
-    "cor2" : "white",
-    "jogadores" : [
+    "nome" : "São Paulo FC",
+    "cor1" : "white",
+    "cor2" : "red",
+    "jogadores" : [ 
         {
-            "nome": "Gatito",
+            "nome": "Thiago Volpi",
             "habilidades" : {
-                "penalti": 16,
-                "posicionamento" : 13,
-                "defende" : 14,
-                "espalma" : 14,
-                "espalmaFora" : 14,
-                "jogoAereo" : 14,
-                "reposicao" : 10
+                "penalti": 12,
+                "posicionamento" : 12,
+                "defende" : 13,
+                "espalma" : 13,
+                "espalmaFora" : 13,
+                "jogoAereo" : 13,
+                "reposicao" : 12
             },
             "posicao" : 1,
             "camisa":1,
@@ -27,16 +27,16 @@
             "time" : "timeHome"
         },
         {
-            "nome": "Carli",
+            "nome": "Bruno Alves",
             "habilidades" : {
                 "forca" : 13,
-                "toque" : 10,
-                "lancamento" : 10,
-                "chute" : 8,
+                "toque" : 9,
+                "lancamento" : 9,
+                "chute" : 6,
                 "drible" : 4,
                 "carrinho" : 12,
-                "corrida" : 5,
-                "jogoAereo" : 13
+                "corrida" : 8,
+                "jogoAereo" : 12
         
             },
             "posicao" : 1,
@@ -52,16 +52,16 @@
             "time" : "timeHome"
         },
         {
-            "nome": "Gabriel",
+            "nome": "Arboleda",
             "habilidades" : {
-                "forca" : 13,
-                "toque" : 9,
-                "lancamento" : 5,
-                "chute" : 4,
-                "drible" : 2,
-                "carrinho" : 12,
-                "corrida" : 8,
-                "jogoAereo" : 11
+                "forca" : 14,
+                "toque" : 12,
+                "lancamento" : 11,
+                "chute" : 9,
+                "drible" : 4,
+                "carrinho" : 13,
+                "corrida" : 11,
+                "jogoAereo" : 13
             },
             "posicao" : 2,
             "camisa" : 3,
@@ -76,16 +76,16 @@
             "time" : "timeHome"
         },
         {
-            "nome": "Gustavo Bochecha",
+            "nome": "JuanFran",
             "habilidades" : {
-                "forca" : 12,
-                "toque" : 12,
-                "lancamento" : 9,
-                "chute" : 8,
-                "drible" : 7,
-                "carrinho" : 13,
-                "corrida" : 9,
-                "jogoAereo" : 9
+                "forca" : 13,
+                "toque" : 13,
+                "lancamento" : 13,
+                "chute" : 11,
+                "drible" : 9,
+                "carrinho" : 12,
+                "corrida" : 10,
+                "jogoAereo" : 8
             },
             "posicao" : 3,
             "camisa" : 4,
@@ -100,16 +100,16 @@
             "time" : "timeHome"
         },
         {
-            "nome": "Cicero",
+            "nome": "Tchê Tchê",
             "habilidades" : {
-                "forca" : 10,
-                "toque" : 13,
-                "lancamento" : 12,
-                "chute" : 11,
+                "forca" : 12,
+                "toque" : 12,
+                "lancamento" : 11,
+                "chute" : 10,
                 "drible" : 10,
-                "carrinho" : 10,
-                "corrida" : 9,
-                "jogoAereo" : 13
+                "carrinho" : 11,
+                "corrida" : 12,
+                "jogoAereo" : 8
             },
             "posicao" : 4,
             "camisa" : 5,
@@ -124,16 +124,16 @@
             "time" : "timeHome"
         },
         {
-            "nome": "Alex Santana",
+            "nome": "Dani Alves",
             "habilidades" : {
-                "forca" : 12,
-                "toque" : 13,
-                "lancamento" : 10,
-                "chute" : 12,
-                "drible" : 12,
-                "carrinho" : 12,
-                "corrida" : 11,
-                "jogoAereo" : 9
+                "forca" : 16,
+                "toque" : 16,
+                "lancamento" : 16,
+                "chute" : 13,
+                "drible" : 15,
+                "carrinho" : 13,
+                "corrida" : 16,
+                "jogoAereo" : 7
             },
             "posicao" : 5,
             "camisa" : 6,
@@ -148,16 +148,16 @@
             "time" : "timeHome"
         },
         {
-            "nome": "Luis Fernando",
+            "nome": "Hernanes",
             "habilidades" : {
-                "forca" : 11,
-                "toque" : 9,
-                "lancamento" : 6,
-                "chute" : 9,
-                "drible" : 7,
+                "forca" : 8,
+                "toque" : 13,
+                "lancamento" : 13,
+                "chute" : 13,
+                "drible" : 12,
                 "carrinho" : 11,
                 "corrida" : 11,
-                "jogoAereo" : 9
+                "jogoAereo" : 12
             },
             "posicao" : 6,
             "camisa" : 7,
@@ -172,15 +172,15 @@
             "time" : "timeHome"
         },
         {
-            "nome": "Rodrigo Pimpão",
+            "nome": "Alexandre Pato",
             "habilidades" : {
-                "forca" : 12,
-                "toque" : 11,
-                "lancamento" : 10,
-                "chute" : 10,
-                "drible" : 10,
-                "carrinho" : 11,
-                "corrida" : 12,
+                "forca" : 13,
+                "toque" : 12,
+                "lancamento" : 8,
+                "chute" : 13,
+                "drible" : 13,
+                "carrinho" : 3,
+                "corrida" : 11,
                 "jogoAereo" : 12
             },
             "posicao" : 7,
@@ -194,17 +194,17 @@
                 "6" : "chute"
             },
             "time" : "timeHome"
-        }, 
+        },
         {
-            "nome": "Diego Souza",
+            "nome": "Pablo",
             "habilidades" : {
-                "forca" : 14,
-                "toque" : 13,
-                "lancamento" : 13,
-                "chute" : 13,
-                "drible" : 9,
-                "carrinho" : 7,
-                "corrida" : 8,
+                "forca" : 13,
+                "toque" : 9,
+                "lancamento" : 3,
+                "chute" : 11,
+                "drible" : 11,
+                "carrinho" : 5,
+                "corrida" : 10,
                 "jogoAereo" : 13
             },
             "posicao" : 8,
@@ -212,7 +212,7 @@
             "acoes": {
                 "1" : "carrinho",
                 "2" : "corrida",
-                "3" : "chute",
+                "3" : "chute", 
                 "4" : "drible",
                 "5" : "toque",
                 "6" : "chute"

@@ -6,13 +6,13 @@
         {
             "nome": "Muriel",
             "habilidades" : {
-                "penalti": 15,
-                "posicionamento" : 12,
-                "defende" : 14,
-                "espalma" : 14,
-                "espalmaFora" : 14,
-                "jogoAereo" : 17,
-                "reposicao" : 14
+                "penalti": 10,
+                "posicionamento" : 10,
+                "defende" : 10,
+                "espalma" : 10,
+                "espalmaFora" : 10,
+                "jogoAereo" : 10,
+                "reposicao" : 10
             },
             "posicao" : 1,
             "camisa":1,
@@ -29,13 +29,13 @@
         {
             "nome": "Nino",
             "habilidades" : {
-                "forca" : 13,
-                "toque" : 13,
-                "lancamento" : 10,
+                "forca" : 11,
+                "toque" : 9,
+                "lancamento" : 6,
                 "chute" : 6,
                 "drible" : 4,
-                "carrinho" : 14,
-                "corrida" : 5,
+                "carrinho" : 11,
+                "corrida" : 6,
                 "jogoAereo" : 12
         
             },
@@ -54,14 +54,14 @@
         {
             "nome": "Yuri",
             "habilidades" : {
-                "forca" : 15,
-                "toque" : 11,
-                "lancamento" : 6,
+                "forca" : 11,
+                "toque" : 9,
+                "lancamento" : 8,
                 "chute" : 4,
                 "drible" : 2,
-                "carrinho" : 11,
+                "carrinho" : 10,
                 "corrida" : 7,
-                "jogoAereo" : 14
+                "jogoAereo" : 12
             },
             "posicao" : 2,
             "camisa" : 3,
@@ -78,14 +78,14 @@
         {
             "nome": "Gilberto",
             "habilidades" : {
-                "forca" : 15,
+                "forca" : 12,
                 "toque" : 11,
                 "lancamento" : 13,
-                "chute" : 8,
-                "drible" : 7,
-                "carrinho" : 12,
-                "corrida" : 7,
-                "jogoAereo" : 9
+                "chute" : 9,
+                "drible" : 11,
+                "carrinho" : 11,
+                "corrida" : 13,
+                "jogoAereo" : 12
             },
             "posicao" : 3,
             "camisa" : 4,
@@ -102,14 +102,14 @@
         {
             "nome": "Daniel",
             "habilidades" : {
-                "forca" : 13,
-                "toque" : 14,
-                "lancamento" : 12,
-                "chute" : 15,
-                "drible" : 14,
-                "carrinho" : 14,
-                "corrida" : 12,
-                "jogoAereo" : 13
+                "forca" : 10,
+                "toque" : 11,
+                "lancamento" : 11,
+                "chute" : 10,
+                "drible" : 7,
+                "carrinho" : 12,
+                "corrida" : 10,
+                "jogoAereo" : 9
             },
             "posicao" : 4,
             "camisa" : 5,
@@ -124,16 +124,16 @@
             "time" : "timeHome"
         },
         {
-            "nome": "Ganso",
+            "nome": "Paulo Henrique Ganso",
             "habilidades" : {
-                "forca" : 13,
+                "forca" : 6,
                 "toque" : 14,
-                "lancamento" : 12,
-                "chute" : 13,
-                "drible" : 12,
-                "carrinho" : 14,
-                "corrida" : 12,
-                "jogoAereo" : 7
+                "lancamento" : 14,
+                "chute" : 12,
+                "drible" : 13,
+                "carrinho" : 5,
+                "corrida" : 13,
+                "jogoAereo" : 4
             },
             "posicao" : 5,
             "camisa" : 6,
@@ -150,14 +150,14 @@
         {
             "nome": "Yoni Gonzales",
             "habilidades" : {
-                "forca" : 11,
-                "toque" : 12,
-                "lancamento" : 10,
-                "chute" : 10,
-                "drible" : 4,
-                "carrinho" : 14,
+                "forca" : 12,
+                "toque" : 13,
+                "lancamento" : 9,
+                "chute" : 11,
+                "drible" : 14,
+                "carrinho" : 8,
                 "corrida" : 13,
-                "jogoAereo" : 7
+                "jogoAereo" : 12
             },
             "posicao" : 6,
             "camisa" : 7,
@@ -174,14 +174,14 @@
         {
             "nome": "Nene",
             "habilidades" : {
-                "forca" : 11,
-                "toque" : 14,
-                "lancamento" : 12,
-                "chute" : 6,
-                "drible" : 4,
-                "carrinho" : 14,
-                "corrida" : 12,
-                "jogoAereo" : 12
+                "forca" : 12,
+                "toque" : 15,
+                "lancamento" : 15,
+                "chute" : 12,
+                "drible" : 10,
+                "carrinho" : 2,
+                "corrida" : 7,
+                "jogoAereo" : 11
             },
             "posicao" : 7,
             "camisa" : 8,
@@ -198,14 +198,14 @@
         {
             "nome": "Pedro",
             "habilidades" : {
-                "forca" : 13,
-                "toque" : 6,
+                "forca" : 12,
+                "toque" : 10,
                 "lancamento" : 3,
-                "chute" : 12,
-                "drible" : 4,
-                "carrinho" : 14,
-                "corrida" : 13,
-                "jogoAereo" : 14
+                "chute" : 15,
+                "drible" : 11,
+                "carrinho" : 8,
+                "corrida" : 10,
+                "jogoAereo" : 15
             },
             "posicao" : 8,
             "camisa" : 9,
