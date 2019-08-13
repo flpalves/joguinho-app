@@ -445,7 +445,7 @@
 
 
 function setJogo(home, away) {
-    return jogo = {
+    jogo = {
         timeHome: {
             placar: 0,
             nome: home.nome,
@@ -475,9 +475,14 @@ function setJogo(home, away) {
             etapa: 1,
             minuto: 0
         },
-        encerrado : false
-
+        encerrado : false,
+        stats : {
+            'timeHome' : [],
+            'timeAway' : [],
+        }
     }
+    initStats();
+    return jogo;
 }
 
 function rolaDado() {
@@ -512,6 +517,7 @@ function proximaJogada() {
 function controlaJogo() {
 
     // while (jogo.tempo.etapa <= 2) {
+    
     if (jogo.tempo.etapa <= 2) {
 
         // jogo.tempo.minuto = 0;
@@ -552,4 +558,135 @@ function printaAcao(jogada) {
     document.getElementById("result").appendChild(p).setAttribute("style", "background:" + jogo[jogo.posseBola.timeAtk].cores.principal + "; color:" + jogo[jogo.posseBola.timeAtk].cores.secundaria + "; border: 1px solid" + jogo[jogo.posseBola.timeAtk].cores.secundaria + " blue;");
 }
 
+function initStats(){
+    jogo.timeHome.jogadores.forEach(function(jogador){
+        jogo.stats.timeHome.push({
+            'corrida' : {
+                'tentativas' : 0,
+                'concluidas' : 0,
+                'perfeitas'  : 0,
+                'falha'      : 0
+            },
+            'toque' : {
+                'tentativas' : 0,
+                'concluidas' : 0,
+                'perfeitas'  : 0,
+                'falha'      : 0
+            },
+            'lancamento' : {
+                'tentativas' : 0,
+                'concluidas' : 0,
+                'perfeitas'  : 0,
+                'falha'      : 0
+            },
+            'drible' : {
+                'tentativas' : 0,
+                'concluidas' : 0,
+                'perfeitas'  : 0,
+                'falha'      : 0
+            },
+            'drible' : {
+                'tentativas' : 0,
+                'concluidas' : 0,
+                'perfeitas'  : 0,
+                'falha'      : 0
+            },
+            'chute' : {
+                'tentativas' : 0,
+                'concluidas' : 0,
+                'perfeitas'  : 0,
+                'falha'      : 0
+            },
+            'cabeceio' : {
+                'tentativas' : 0,
+                'concluidas' : 0,
+                'perfeitas'  : 0,
+                'falha'      : 0
+            },
+            'disputa' : {
+                'tentativas' : 0,
+                'concluidas' : 0,
+                'perfeitas'  : 0,
+                'falha'      : 0
+            },
+            'carrinho' : {
+                'tentativas' : 0,
+                'concluidas' : 0,
+                'perfeitas'  : 0,
+                'falha'      : 0
+            },      
+        })
+    });
 
+    jogo.timeAway.jogadores.forEach(function(jogador){
+        jogo.stats.timeAway.push({
+            'corrida' : {
+                'tentativas' : 0,
+                'concluidas' : 0,
+                'perfeitas'  : 0,
+                'falha'      : 0
+            },
+            'toque' : {
+                'tentativas' : 0,
+                'concluidas' : 0,
+                'perfeitas'  : 0,
+                'falha'      : 0
+            },
+            'lancamento' : {
+                'tentativas' : 0,
+                'concluidas' : 0,
+                'perfeitas'  : 0,
+                'falha'      : 0
+            },
+            'drible' : {
+                'tentativas' : 0,
+                'concluidas' : 0,
+                'perfeitas'  : 0,
+                'falha'      : 0
+            },
+            'drible' : {
+                'tentativas' : 0,
+                'concluidas' : 0,
+                'perfeitas'  : 0,
+                'falha'      : 0
+            },
+            'chute' : {
+                'tentativas' : 0,
+                'concluidas' : 0,
+                'perfeitas'  : 0,
+                'falha'      : 0
+            },
+            'cabeceio' : {
+                'tentativas' : 0,
+                'concluidas' : 0,
+                'perfeitas'  : 0,
+                'falha'      : 0
+            },
+            'disputa' : {
+                'tentativas' : 0,
+                'concluidas' : 0,
+                'perfeitas'  : 0,
+                'falha'      : 0
+            },
+            'carrinho' : {
+                'tentativas' : 0,
+                'concluidas' : 0,
+                'perfeitas'  : 0,
+                'falha'      : 0
+            },  
+        })
+    });
+} 
+
+function mensuraJogada(time, indexJogador, acao, status){
+    jogo.stats[time][indexJogador][acao].tentativas++;
+    if(status == 'sucesso'){
+        jogo.stats[time][indexJogador][acao].concluidas++;
+    }
+    if(status == 'perfeita'){
+        jogo.stats[time][indexJogador][acao].perfeitas++;
+    }
+    if(status == 'falha'){
+        jogo.stats[time][indexJogador][acao].falha++;
+    }
+}
