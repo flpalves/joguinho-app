@@ -8,7 +8,7 @@
         <b-row>
             <b-col md="3">
                 <select v-model="idHomeClub" class="form-control">
-                    <option @key="time.id" :id="time.id" v-for="time in clubs" :value="time.id">{{time.time}}</option>
+                    <option v-bind:key="time.id" :id="time.id" v-for="time in clubs" :value="time.id">{{time.time}}</option>
                 </select>
             </b-col>
             <b-col md="6">
@@ -16,7 +16,7 @@
             </b-col>
             <b-col md="3">
                 <select v-model="idAwayClub" class="form-control">
-                    <option @key="time.id" :id="time.id" v-for="time in clubs" :value="time.id">{{time.time}}</option>
+                    <option v-bind:key="time.id" :id="time.id" v-for="time in clubs" :value="time.id">{{time.time}}</option>
                 </select>
             </b-col>
         </b-row>
@@ -90,7 +90,6 @@ export default {
         goToGameDay : function(){
             this.$store.commit('saveClubHome', this.timeHome);
             this.$store.commit('saveClubAway', this.timeAway);
-
             this.$router.push('/game-day');
         }
     },

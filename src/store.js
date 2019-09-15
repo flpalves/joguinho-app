@@ -18,5 +18,9 @@ export default new Vuex.Store({
   },
   actions: {
 
+  },
+  getters: {
+    getterClubHome: (state) => state.ClubHome
+
   }
 })
