@@ -1,27 +1,122 @@
 [
     {
-        "id"  : 1,
-        "nome" : "botafogo",
-        "nomeCompleto" : "Botafogo FR"
+      "time": "Flamengo",
+      "id": 1,
+      "cor1": "red",
+      "cor2": "black"
     },
     {
-        "id"  : 2,
-        "nome" : "flamengo",
-        "nomeCompleto" : "CR Flamengo"
+      "time": "Botafogo",
+      "id": 2,
+      "cor1": "black",
+      "cor2": "white"
     },
     {
-        "id"  : 3,
-        "nome" : "fluminense",
-        "nomeCompleto" : "Fluminense FC"
+      "time": "Fluminense",
+      "id": 3,
+      "cor1": "green",
+      "cor2": "red"
     },
     {
-        "id"  : 4,
-        "nome" : "vasco",
-        "nomeCompleto" : "CR Vasco da Gama"
+      "time": "Vasco da Gama",
+      "id": 4,
+      "cor1": "white",
+      "cor2": "black"
     },
     {
-        "id"  : 5,
-        "nome" : "saoPaulo",
-        "nomeCompleto" : "São Paulo FC"
+      "time": "Palmeiras",
+      "id": 5,
+      "cor1": "green",
+      "cor2": "white"
+    },
+    {
+      "time": "São Paulo",
+      "id": 6,
+      "cor1": "white",
+      "cor2": "red"
+    },
+    {
+      "time": "Corinthians",
+      "id": 7,
+      "cor1": "white",
+      "cor2": "black"
+    },
+    {
+      "time": "Santos",
+      "id": 8,
+      "cor1": "white",
+      "cor2": "black"
+    },
+    {
+      "time": "CSA",
+      "id": 9,
+      "cor1": "white",
+      "cor2": "blue"
+    },
+    {
+      "time": "Bahia",
+      "id": 10,
+      "cor1": "white",
+      "cor2": "red"
+    },
+    {
+      "time": "Grêmio",
+      "id": 11,
+      "cor1": "blue",
+      "cor2": "black"
+    },
+    {
+      "time": "Internacional",
+      "id": 12,
+      "cor1": "red",
+      "cor2": "white"
+    },
+    {
+      "time": "Atlético MG",
+      "id": 13,
+      "cor1": "black",
+      "cor2": "white"
+    },
+    {
+      "time": "Cruzeiro",
+      "id": 14,
+      "cor1": "blue",
+      "cor2": "white"
+    },
+    {
+      "time": "Athletico PR",
+      "id": 15,
+      "cor1": "red",
+      "cor2": "black"
+    },
+    {
+      "time": "Goiás",
+      "id": 16,
+      "cor1": "green",
+      "cor2": "white"
+    },
+    {
+      "time": "Ceara",
+      "id": 17,
+      "cor1": "black",
+      "cor2": "white"
+    },
+    {
+      "time": "Fortaleza",
+      "id": 18,
+      "cor1": "red",
+      "cor2": "blue"
+    },
+    {
+      "time": "Chapecoense",
+      "id": 19,
+      "cor1": "green",
+      "cor2": "white"
+    },
+    {
+      "time": "Avai",
+      "id": 20,
+      "cor1": "blue",
+      "cor2": "white"
     }
-]
+   ]

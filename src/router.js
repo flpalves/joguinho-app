@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Match from './views/Match.vue'
+import PreMatch from './views/PreMatch.vue'
+import GameDay from './views/GameDay.vue'
+
 
 Vue.use(Router)
 
@@ -11,7 +14,17 @@ export default new Router({
     {
       path: '/',
       name: 'home',
+      component: PreMatch
+    },
+    {
+      path: '/match',
+      name: 'match',
       component: Match
+    },
+    {
+      path: '/game-day',
+      name: 'gameDay',
+      component: GameDay
     },
     {
       path: '/about',
@@ -23,3 +36,4 @@ export default new Router({
     }
   ]
 })
+ 
