@@ -60,7 +60,7 @@
 const axios = require('axios');
 
 export default {
-    name: 'home',
+    name: 'match',
     components: {
         
     },
