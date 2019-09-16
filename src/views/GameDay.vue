@@ -108,7 +108,23 @@ export default {
             }
         },
         goToMatch: function(){
+            var clubGameHome = {
+                "nome" : this.clubHome.time,
+                "cor1" : this.clubHome.cor1,
+                "cor2" : this.clubHome.cor2,
+                "jogadores" : this.start11Home
+            };
+            var clubGameAway = {
+                "nome" : this.clubAway.time,
+                "cor1" : this.clubAway.cor1,
+                "cor2" : this.clubAway.cor2,
+                "jogadores" : this.start11Away
+            }
             console.log('go to match');
+
+            this.$store.commit('saveClubHome', this.timeHome);
+            this.$store.commit('saveClubAway', this.timeAway);
+            this.$router.push('/match');
         }
     },
     

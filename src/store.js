@@ -7,6 +7,8 @@ export default new Vuex.Store({
   state: {
     ClubHome : {},
     ClubAway : {},
+    ClubGameHome : {},
+    clubGameAway : {},
   },
   mutations: {
     saveClubHome(state, payload){
@@ -14,13 +16,15 @@ export default new Vuex.Store({
     },
     saveClubAway(state, payload){
         state.ClubAway = payload;
+    },
+    saveClubGameHome(state, payload){
+        state.ClubGameHome = payload;
+    },
+    saveClubGameAway(state, payload){
+        state.clubGameAway = payload;
     }
   },
   actions: {
-
-  },
-  getters: {
-    getterClubHome: (state) => state.ClubHome
 
   }
 })

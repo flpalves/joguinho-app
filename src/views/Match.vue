@@ -56,6 +56,14 @@ export default {
 
         }
     },
+    computed: {
+        ClubGameHome(){
+            return this.$store.state.ClubGameHome
+        },
+        ClubGameAway(){
+            return this.$store.state.ClubGameAway
+        },
+    },
     data: function(){
         return {
             times : {},
