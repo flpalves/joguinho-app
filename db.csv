@@ -1,0 +1,33 @@
+nome;posicao;clube_id;forca;toque;lancamento;chute;drible;carrinho;corrida;penalti;posicionamento;defende;espalma;espalmaFora;jogoAereo;reposicao;1;2;3;4;5;6
+Diego Alves;goleiro;1;0;0;0;0;0;0;0;15;13;13;13;13;12;11;defende;defende;espalma;espalma;espalmaFora;espalmaFora
+Pablo Mari;zagueiro;1;13;8;6;4;2;13;3;0;0;0;0;0;13;0;carrinho;corrida;chute;drible;toque;disputa
+Rodrigo Caio;zagueiro;1;12;12;8;3;2;14;8;0;0;0;0;0;14;0;carrinho;corrida;chute;drible;toque;disputa
+Gustavo Cuellar;volante;1;15;11;10;6;6;14;8;0;0;0;0;0;7;0;carrinho;corrida;chute;drible;toque;disputa
+Filipe Luis;lateral;1;13;14;13;6;8;12;11;0;0;0;0;0;6;0;carrinho;corrida;chute;drible;toque;lancamento
+Rafinha;lateral;1;11;14;15;9;12;8;8;0;0;0;0;0;5;0;carrinho;corrida;chute;drible;toque;lancamento
+Gerson;meia;1;14;14;12;13;12;10;12;0;0;0;0;0;9;0;carrinho;corrida;chute;drible;toque;toque
+William Arão;meia;1;11;10;7;6;6;11;9;0;0;0;0;0;11;0;carrinho;corrida;chute;drible;toque;toque
+De Arrascaeta;meia;1;9;14;8;13;12;5;12;0;0;0;0;0;8;0;carrinho;corrida;chute;drible;toque;toque
+Bruno Henrique;atacante;1;9;13;8;13;14;9;16;0;0;0;0;0;10;0;carrinho;corrida;chute;drible;toque;chute
+Gabigol;atacante;1;12;11;3;15;12;7;12;0;0;0;0;0;12;0;carrinho;corrida;chute;drible;toque;chute
+Everton Ribeiro;meia;1;10;13;12;12;13;7;13;0;0;0;0;0;8;0;carrinho;corrida;chute;drible;toque;lancamento
+Diego Ribas;meia;1;11;14;13;12;12;9;10;0;0;0;0;0;10;0;carrinho;corrida;chute;drible;toque;toque
+Thuller;zagueiro;1;12;7;4;4;6;10;9;0;0;0;0;0;12;0;carrinho;corrida;chute;drible;toque;disputa
+Lincoln;atacante;1;13;8;4;9;8;5;8;0;0;0;0;0;11;0;carrinho;corrida;chute;drible;toque;chute
+César;goleiro;1;0;0;0;0;0;0;0;12;9;9;11;12;11;8;defende;defende;espalma;espalma;espalmaFora;espalmaFora
+Everson;goleiro;8;0;0;0;0;0;0;0;0;12;11;12;12;12;14;defende;defende;espalma;espalma;espalmaFora;espalmaFora
+Luan Peres;zagueiro;8;13;11;8;6;3;13;12;0;0;0;0;0;13;0;carrinho;corrida;chute;drible;toque;disputa
+Gustavo Henrique;zagueiro;8;12;12;9;5;2;13;11;0;0;0;0;0;12;0;carrinho;corrida;chute;drible;toque;disputa
+Victor Ferraz;lateral;8;12;10;11;8;8;11;8;0;0;0;0;0;9;0;carrinho;corrida;chute;drible;toque;disputa
+Jorge;lateral;8;12;13;13;11;9;12;13;0;0;0;0;0;7;0;carrinho;corrida;chute;drible;toque;disputa
+Allison;volante;8;11;12;8;7;6;12;7;0;0;0;0;0;10;0;carrinho;corrida;chute;drible;toque;disputa
+Carlos Sanchez;meia;8;13;14;12;13;12;12;9;0;0;0;0;0;8;0;carrinho;corrida;chute;drible;toque;toque
+Jean Mota;meia;8;12;12;9;9;11;11;9;0;0;0;0;0;7;0;carrinho;corrida;chute;drible;toque;toque
+Marinho;atacante;8;12;11;6;12;14;8;13;0;0;0;0;0;11;0;carrinho;corrida;chute;drible;toque;chute
+Eduardo Sasha;atacante;8;10;9;5;11;12;6;10;0;0;0;0;0;10;0;carrinho;corrida;chute;drible;toque;chute
+Soteldo;atacante;8;7;11;12;10;15;6;15;0;0;0;0;0;2;0;carrinho;corrida;chute;drible;toque;lancamento
+Vanderlei;goleiro;8;0;0;0;0;0;0;0;0;12;13;13;13;13;9;defende;defende;espalma;espalma;espalmaFora;espalmaFora
+Cueva;meia;8;12;12;11;11;11;9;10;0;0;0;0;0;8;0;carrinho;corrida;chute;drible;toque;toque
+Lucas Verissímo;zagueiro;8;13;13;7;5;5;14;12;0;0;0;0;0;13;0;carrinho;corrida;chute;drible;toque;disputa
+Derlis Gonzalez;meia;8;9;11;10;10;11;5;11;0;0;0;0;0;9;0;carrinho;corrida;chute;drible;toque;toque
+Fernando Uribe;atacante;8;12;9;7;11;8;4;7;0;0;0;0;0;14;0;carrinho;corrida;chute;drible;toque;chute

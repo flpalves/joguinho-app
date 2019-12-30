@@ -487,7 +487,7 @@ function rolaDado() {
 
 
 function proximaJogada() {
-    // debugger;
+    debugger;
     
     var timeBola = jogo[jogo.posseBola.timeAtk].jogadores;
     var jogadorBola = timeBola[jogo.posseBola.jogador];

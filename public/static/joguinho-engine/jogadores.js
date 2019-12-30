@@ -166,6 +166,7 @@ function corrida(){
             printaAcao(jogadorBola.nome+' consegue escapar da marcação e segue com ela');
             console.log(jogadorDef); 
             timeBola[jogo.posseBola.jogador].posicao++; 
+            debugger;
             jogo.posseBola.posicao = timeBola[jogo.posseBola.jogador].posicao;
             printaAcao(jogadorBola.nome +"avança com a bola");
             mensuraJogada(jogadorBola.time, getIndexByCamisa(timeBola, jogadorBola.camisa), 'corrida', 'sucesso');
@@ -427,7 +428,7 @@ function corner(){
 }
 
 function rifaBola(posicaoAtk){
-    
+    debugger;
     resetarTime();
     var goleiro = jogo[jogo.posseBola.timeDef].jogadores[0];
     // debugger;
@@ -692,7 +693,7 @@ function buscaJogadorCampoDef(numeroCasa){
 }
 
 function invertePosse(jogador){ 
-    // debugger;
+    debugger;
     printaAcao('inverte a posse');
     
     var novoAtkTemp = jogo.posseBola.timeDef;
@@ -716,7 +717,7 @@ function getIndexByCamisa(time, camisa){
 } 
 
 function goleiroRepoeBola(goleiro){
-    // debugger;
+    debugger;
     resetarTime();
     var casaAlvo = randomNumber(2) + 2;
     var jogador = [];

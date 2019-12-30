@@ -108,6 +108,65 @@ export default {
             }
         },
         goToMatch: function(){
+            var posicoesPorJogador = ['1','1','2','3','3','4','5','6','6','7','8'];
+            this.start11Home.map( (jogador, index) => {
+                jogador.camisa = index+1;
+                jogador.posicao = posicoesPorJogador[index];
+                jogador.time = 'timeHome';
+                jogador.acoes = {
+                    '1' : jogador[1],
+                    '2' : jogador[2],
+                    '3' : jogador[3],
+                    '4' : jogador[4],
+                    '5' : jogador[5],
+                    '6' : jogador[6]
+                };
+                jogador.habilidades = {
+                    "forca" : jogador.forca,
+                    "toque" : jogador.toque,
+                    "lancamento" : jogador.lancamento,
+                    "chute" : jogador.chute,
+                    "drible" : jogador.drible,
+                    "carrinho" : jogador.carrinho,
+                    "corrida" : jogador.corrida,
+                    "jogoAereo" : jogador.jogoAereo,
+                    "penalti": jogador.penalti,
+                    "posicionamento" : jogador.posicionamento,
+                    "defende" : jogador.defende,
+                    "espalma" : jogador.espalma,
+                    "espalmaFora" : jogador.espalmaFora,
+                    "reposicao" : jogador.reposicao
+                }
+
+            });
+            this.start11Away.map( (jogador, index) => {
+                jogador.camisa = index+1;
+                jogador.time = 'timeAway';
+                jogador.acoes = {
+                    '1' : jogador[1],
+                    '2' : jogador[2],
+                    '3' : jogador[3],
+                    '4' : jogador[4],
+                    '5' : jogador[5],
+                    '6' : jogador[6]
+                };
+                jogador.habilidades = {
+                    "forca" : jogador.forca,
+                    "toque" : jogador.toque,
+                    "lancamento" : jogador.lancamento,
+                    "chute" : jogador.chute,
+                    "drible" : jogador.drible,
+                    "carrinho" : jogador.carrinho,
+                    "corrida" : jogador.corrida,
+                    "jogoAereo" : jogador.jogoAereo,
+                    "penalti": jogador.penalti,
+                    "posicionamento" : jogador.posicionamento,
+                    "defende" : jogador.defende,
+                    "espalma" : jogador.espalma,
+                    "espalmaFora" : jogador.espalmaFora,
+                    "reposicao" : jogador.reposicao
+                }
+            });
             var clubGameHome = {
                 "nome" : this.clubHome.time,
                 "cor1" : this.clubHome.cor1,
@@ -122,8 +181,8 @@ export default {
             }
             console.log('go to match');
 
-            this.$store.commit('saveClubHome', this.timeHome);
-            this.$store.commit('saveClubAway', this.timeAway);
+            this.$store.commit('saveClubGameHome', clubGameHome);
+            this.$store.commit('saveClubGameAway', clubGameAway);
             this.$router.push('/match');
         }
     },
