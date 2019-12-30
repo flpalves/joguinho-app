@@ -3,9 +3,10 @@
         <b-row>
             <b-col>
                 <h1>Joguinho</h1>
+                
             </b-col> 
         </b-row>
-         
+        
         <b-row>
             <b-col>
 
@@ -19,6 +20,7 @@
         </b-row>
         <b-row>
             <b-col md="12">
+                <p class="placar">{{ClubGameHome.nome}} {{placarHome}} x {{placarAway}} {{ClubGameAway.nome}}</p>
                 <button v-if="ClubGameHome.nome && ClubGameAway.nome" class="btn btn-primary" @click="startGame()">Começa</button>
             </b-col>
         </b-row>
@@ -47,7 +49,7 @@ export default {
             window.jTimeHome = this.ClubGameHome.jogadores;
             window.jTimeAway = this.ClubGameAway.jogadores;
             
-            var interval = setInterval(foo, 1000);
+            var interval = setInterval(foo, 2000);
             function foo() {
                 if (jogo.encerrado){
                     clearInterval(interval);
@@ -70,6 +72,19 @@ export default {
             }
             return this.$store.state.ClubGameAway
         },
+        placarHome(){
+            if(typeof jogo !== 'undefined'){
+                return jogo.timeHome.placar;
+            } 
+            return 0
+            
+        },
+        placarAway(){
+            if(typeof jogo !== 'undefined'){
+                return jogo.timeAway.placar;
+            } 
+            return 0
+        }
     },
     data: function(){
         return {
@@ -82,3 +97,10 @@ export default {
     }
 }
 </script>
+<style lang="css">
+    .placar{
+        display: block;
+        background:#FFF;
+        color:#000;
+    }
+</style>

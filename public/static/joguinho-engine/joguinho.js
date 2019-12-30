@@ -106,7 +106,6 @@ function controlaJogo() {
 
 
 function printaAcao(jogada) {
-    debugger;
     var p = document.createElement('p');
     var texto = document.createTextNode(jogo.tempo.minuto + '" ' + jogada + '('+ jogo.posseBola.posicao +')');
     p.appendChild(texto);

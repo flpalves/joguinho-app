@@ -108,7 +108,7 @@ export default {
             }
         },
         goToMatch: function(){
-            var posicoesPorJogador = ['1','1','2','3','3','4','5','6','6','7','8'];
+            var posicoesPorJogador = [1,1,2,3,3,4,5,6,6,7,8];
             this.start11Home.map( (jogador, index) => {
                 jogador.camisa = index+1;
                 jogador.posicao = posicoesPorJogador[index];
@@ -141,6 +141,7 @@ export default {
             });
             this.start11Away.map( (jogador, index) => {
                 jogador.camisa = index+1;
+                jogador.posicao = posicoesPorJogador[index];
                 jogador.time = 'timeAway';
                 jogador.acoes = {
                     '1' : jogador[1],
