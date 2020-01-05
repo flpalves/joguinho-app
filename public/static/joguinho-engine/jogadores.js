@@ -2,19 +2,19 @@ function toque(){
     //debugger;
     var timeBola = jogo[jogo.posseBola.timeAtk].jogadores;
     var jogadorBola = timeBola[jogo.posseBola.jogador];
-    var casaAlvo = jogadorBola.posicao + 1 ;
+    var casaAlvo = parseInt(jogadorBola.posicao + 1) ;
     var envolvidos = buscaJogadorCampo(casaAlvo);
 
 
     //caso não tenha ninguem na casa a frente, toca pro lado;
     if(envolvidos.atk.length == 0){
-        casaAlvo = jogadorBola.posicao;
+        casaAlvo = parseInt(jogadorBola.posicao);
         envolvidos = buscaJogadorCampo(casaAlvo);
     }
 
     //caso não tenha ninguem na casa ao lado, toca pra trás;
     if(envolvidos.atk.length == 0){
-        casaAlvo = jogadorBola.posicao - 1;
+        casaAlvo = parseInt(jogadorBola.posicao - 1);
         envolvidos = buscaJogadorCampo(casaAlvo);
     } 
 
@@ -22,6 +22,7 @@ function toque(){
     if(envolvidos.atk.length == 0){
         
         invertePosse(buscaJogadorCampoDef(jogadorBola.posicao[0]));
+        printaAcao("sem opções, ele erra o passe");
         mensuraJogada(jogadorBola.time, getIndexByCamisa(timeBola, jogadorBola.camisa), 'toque', 'falha');
         return false;
     }
@@ -166,6 +167,7 @@ function corrida(){
             printaAcao(jogadorBola.nome+' consegue escapar da marcação e segue com ela');
             console.log(jogadorDef); 
             timeBola[jogo.posseBola.jogador].posicao++; 
+            debugger;
             jogo.posseBola.posicao = timeBola[jogo.posseBola.jogador].posicao;
             printaAcao(jogadorBola.nome +"avança com a bola");
             mensuraJogada(jogadorBola.time, getIndexByCamisa(timeBola, jogadorBola.camisa), 'corrida', 'sucesso');
@@ -197,13 +199,13 @@ function chute(){
         case 5 :
             necessarioDado = 1;
         case 6 :
-            necessarioDado = 2;
+            necessarioDado = 3;
             break;
         case 7 :
-            necessarioDado = 4;
+            necessarioDado = 5;
             break;
         case 8 :
-            necessarioDado = 5;
+            necessarioDado = 8;
             break;
             
         default:
@@ -213,16 +215,16 @@ function chute(){
 
     if(necessarioDado == 0){
         printaAcao(jogadorBola.nome + ' isola a bola para frente!');
-        rifaBola(jogadorBola.posicao + 2);
+        rifaBola(parseInt(jogadorBola.posicao + 2));
         return false;
     }
 
     printaAcao(jogadorBola.nome + ' chutou!');
     //rola o dado para ver se a ação deu bom ou nao
     // debugger; 
-    if(randomNumber(6) <= necessarioDado){
+    if(randomNumber(10) <= necessarioDado){
         printaAcao('a bola vai em direção ao gol');
-        mensuraJogada(jogadorBola.time, getIndexByCamisa(timeBola, jogadorBola.camisa), 'toque', 'sucesso');
+        mensuraJogada(jogadorBola.time, getIndexByCamisa(timeBola, jogadorBola.camisa), 'chute', 'sucesso');
         // goleiro.acoes[rolaDado()](jogadorBola);
         // debugger
         if (typeof goleiro.acoes[rolaDado()] === "function") {
@@ -245,19 +247,19 @@ function lancamento(){
     //debugger;
     var timeBola = jogo[jogo.posseBola.timeAtk].jogadores;
     var jogadorBola = timeBola[jogo.posseBola.jogador];
-    var casaAlvo = jogadorBola.posicao + 2 ;
+    var casaAlvo = parseInt(jogadorBola.posicao + 2) ;
     var envolvidos = buscaJogadorCampo(casaAlvo);
 
     //caso não tenha ninguem 2 casas a frente, toca 1 casa a frente;
     if(envolvidos.atk.length == 0){
-        casaAlvo = jogadorBola.posicao + 1;
+        casaAlvo = parseInt(jogadorBola.posicao + 1);
         envolvidos = buscaJogadorCampo(casaAlvo);
         
     }
 
     //caso não tenha ninguem na casa a frente, toca pro lado;
     if(envolvidos.atk.length == 0){
-        casaAlvo = jogadorBola.posicao;
+        casaAlvo = parseInt(jogadorBola.posicao);
         envolvidos = buscaJogadorCampo(casaAlvo);
     }
 
@@ -335,9 +337,11 @@ function carrinho(jogadorDef){
     }
     if(randomNumber(30) < jogadorDef.habilidades.carrinho) {
         printaAcao('carrinho bem executado e '+jogadorDef.nome+' rouba a bola');
+        mensuraJogada(jogadorDef.time, getIndexByCamisa(timeDef, jogadorDef.camisa), 'carrinho', 'sucesso');
         invertePosse(jogadorDef);
     } else{
         printaAcao(''+jogadorDef.nome+' tenta o carrinho e faz a falta');
+        mensuraJogada(jogadorDef.time, getIndexByCamisa(timeDef, jogadorDef.camisa), 'carrinho', 'falha');
         return falta(jogadorDef);
     }
     console.log('carrinho')
@@ -370,15 +374,21 @@ function disputa(pAtk, pDef){
     var dadoDef = pDef.habilidades.forca + randomNumber(25);
     if(dadoAtk > dadoDef){
         printaAcao(pAtk.nome + 'ganha a bola e fica com a bola!');
+        mensuraJogada(pAtk.time, getIndexByCamisa(timeAtk, pAtk.camisa), 'disputa', 'sucesso');
+        mensuraJogada(pDef.time, getIndexByCamisa(timeDef, pDef.camisa), 'disputa', 'falha');
     } else{
         var goleiro = jogo[jogo.posseBola.timeDef].jogadores[0];
         if(pDef.camisa == goleiro.camisa){
             printaAcao(pDef.nome+' sai e faz a defesa');
+            mensuraJogada(pAtk.time, getIndexByCamisa(timeAtk, pAtk.camisa), 'disputa', 'falha');
+            mensuraJogada(pDef.time, getIndexByCamisa(timeDef, pDef.camisa), 'disputa', 'sucesso');
             invertePosse(pDef);
             tiroMeta(goleiro);
             return true;
         }
-        printaAcao(pDef.nome+'vence no ombro e rouba a bola!')
+        printaAcao(pDef.nome+'vence no ombro e rouba a bola!');
+        mensuraJogada(pAtk.time, getIndexByCamisa(timeAtk, pAtk.camisa), 'disputa', 'falha');
+        mensuraJogada(pDef.time, getIndexByCamisa(timeDef, pDef.camisa), 'disputa', 'sucesso');
         invertePosse(pDef);
     }
     
@@ -387,21 +397,21 @@ function disputa(pAtk, pDef){
 } 
 
 function resetarTime(){
-    //debugger;
+    debugger;
     jogo.timeHome.jogadores = $.extend(true, [], jTimeHome);
     jogo.timeAway.jogadores = $.extend(true, [], jTimeAway);
     return false;
 }
 
 function posGol(){
-    // debugger;
+    debugger;
     jogo.posseBola.jogador = 5;
     jogo.posseBola.posicao = 4;
     var novoAtkTemp = jogo.posseBola.timeDef;
     jogo.posseBola.timeDef = jogo.posseBola.timeAtk;
     jogo.posseBola.timeAtk = novoAtkTemp;
     resetarTime();
-    printaAcao('volta o jogo')
+    printaAcao('volta o jogo');
 }
 
 function corner(){
@@ -416,9 +426,13 @@ function corner(){
     // printaAcao('');
     if(dadoAtk > dadoDef){
         printaAcao(pAtk.nome + 'tenta o cabeçeio');
+        mensuraJogada(pAtk.time, getIndexByCamisa(timeAtk, pAtk.camisa), 'cabeceio', 'sucesso');
+        mensuraJogada(pDef.time, getIndexByCamisa(timeDef, pDef.camisa), 'cabeceio', 'falha');
         cabecada(pAtk);
     } else{
         printaAcao(pDef.nome+'tira de cabeça');
+        mensuraJogada(pAtk.time, getIndexByCamisa(timeAtk, pAtk.camisa), 'cabeceio', 'falha');
+        mensuraJogada(pDef.time, getIndexByCamisa(timeDef, pDef.camisa), 'cabeceio', 'sucesso');
         rifaBola(7);
         return false;
         // invertePosse(pDef);
@@ -427,7 +441,7 @@ function corner(){
 }
 
 function rifaBola(posicaoAtk){
-    
+    // debugger;
     resetarTime();
     var goleiro = jogo[jogo.posseBola.timeDef].jogadores[0];
     // debugger;
@@ -501,6 +515,7 @@ function penalti(jogadorBola){
         
     } else{
         gol();
+        
     }
 }
 
@@ -532,7 +547,7 @@ function defende(jogadorBola){
     
     var goleiro = jogo[jogo.posseBola.timeDef].jogadores[0];
 
-    var forcaGoleiro = goleiro.habilidades.defende + randomNumber(18);
+    var forcaGoleiro = goleiro.habilidades.defende + randomNumber(25);
     var forcaChute = jogadorBola.habilidades.chute + randomNumber(20);
 
     if(forcaGoleiro >= forcaChute){
@@ -552,7 +567,7 @@ function rebote(){
     var envolvidos = buscaJogadorCampo(8);
     // //debugger;
     if(envolvidos.atk.length == 0){ 
-        printaAcao('e ele pega em 2 tempos e fica tranquilo com ela')
+        printaAcao('e ele pega em 2 tempos e fica tranquilo com ela');
         invertePosse(jogo[jogo.posseBola.timeDef].jogadores[0]);
         
     }
@@ -571,7 +586,10 @@ function rebote(){
             disputa(envolvidoAtk, envolvidoDef);
         }
     } else{
-        gol();
+        var goleiro = jogo[jogo.posseBola.timeDef].jogadores[0];
+        printaAcao('e sobra tranquila nas mãos do goleiro');
+        invertePosse(goleiro);
+        tiroMeta(goleiro);
     }
 
 }
@@ -583,7 +601,7 @@ function espalma(jogadorBola){
     var goleiro = jogo[jogo.posseBola.timeDef].jogadores[0];
 
     
-    var forcaGoleiro = goleiro.habilidades.espalma + randomNumber(20);
+    var forcaGoleiro = goleiro.habilidades.espalma + randomNumber(25);
 
     var forcaChute = jogadorBola.habilidades.chute + randomNumber(20);
 
@@ -598,12 +616,12 @@ function espalma(jogadorBola){
 }
 
 function espalmaFora(){
-    debugger;
+    // debugger;
     var timeBola = jogo[jogo.posseBola.timeAtk].jogadores;
     var jogadorBola = timeBola[jogo.posseBola.jogador];
     var goleiro = jogo[jogo.posseBola.timeDef].jogadores[0];
 
-    var forcaGoleiro = goleiro.habilidades.espalmaFora + randomNumber(20);
+    var forcaGoleiro = goleiro.habilidades.espalmaFora + randomNumber(25);
     var forcaChute = jogadorBola.habilidades.chute + randomNumber(20); 
 
     if(forcaGoleiro >= forcaChute){
@@ -620,7 +638,7 @@ function cabecada(jogadorBola){
     var goleiro = jogo[jogo.posseBola.timeDef].jogadores[0];
 
     
-    var forcaGoleiro = goleiro.habilidades.jogoAereo + randomNumber(20);
+    var forcaGoleiro = goleiro.habilidades.jogoAereo + randomNumber(25);
     var forcaCabecada = jogadorBola.habilidades.jogoAereo + randomNumber(20);
 
 
@@ -716,7 +734,7 @@ function getIndexByCamisa(time, camisa){
 } 
 
 function goleiroRepoeBola(goleiro){
-    // debugger;
+    debugger;
     resetarTime();
     var casaAlvo = randomNumber(2) + 2;
     var jogador = [];
