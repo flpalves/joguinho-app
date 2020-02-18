@@ -53,7 +53,8 @@ export default {
 
         filterPlayersByClubId : function(clubId){
             return this.jogadores.filter(function(player){
-                return player.clube_id === clubId
+                // debugger;
+                return player.clube_id == clubId
             });
         },
 

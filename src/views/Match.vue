@@ -49,7 +49,7 @@ export default {
             window.jTimeHome = this.ClubGameHome.jogadores;
             window.jTimeAway = this.ClubGameAway.jogadores;
             
-            var interval = setInterval(foo, 2000);
+            var interval = setInterval(foo, 3000);
             function foo() {
                 if (jogo.encerrado){
                     clearInterval(interval);

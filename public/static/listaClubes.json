@@ -14,14 +14,14 @@
     {
       "time": "Fluminense",
       "id": 3,
-      "cor1": "green",
-      "cor2": "red"
+      "cor1": "#060",
+      "cor2": "#600"
     },
     {
       "time": "Vasco da Gama",
       "id": 4,
-      "cor1": "white",
-      "cor2": "black"
+      "cor1": "black",
+      "cor2": "white"
     },
     {
       "time": "Palmeiras",
