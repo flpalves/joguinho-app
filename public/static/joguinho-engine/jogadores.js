@@ -537,7 +537,7 @@ function tiroMeta(goleiro){
     resetarTime();
     printaAcao(goleiro.nome+" recoloca a bola em jogo");
     var random = randomNumber(3);
-    rifaBola(random+1);
+    rifaBola(random+2);
     return false;
 
 }
@@ -750,7 +750,7 @@ function goleiroRepoeBola(goleiro){
     resetarTime();
     var casaAlvo = randomNumber(2) + 2;
     var jogador = [];
-    if(goleiro.habilidades.reposicao > randomNumber(30)){
+    if(goleiro.habilidades.reposicao > randomNumber(40)){
         jogador = buscaJogadorCampoAtk(casaAlvo)[0];
         if(!jogador){
             jogador = buscaJogadorCampoAtk(casaAlvo - 1)[0];
@@ -762,17 +762,19 @@ function goleiroRepoeBola(goleiro){
         jogo.posseBola.posicao = jogador.posicao;
         printaAcao(goleiro.nome+' entrega a bola para '+jogador.nome);
     } else{
-        jogador = buscaJogadorCampoDef(9 - casaAlvo)[0];
-        if(!jogador){
-            jogador = buscaJogadorCampoDef(9 - casaAlvo - 1)[0];
-            if(!jogador){
-                jogador = buscaJogadorCampoDef(9 - casaAlvo - 2)[0];
-            }
-        }
-        invertePosse(jogador);
+        // jogador = buscaJogadorCampoDef(9 - casaAlvo)[0];
+        // if(!jogador){
+        //     jogador = buscaJogadorCampoDef(9 - casaAlvo - 1)[0];
+        //     if(!jogador){
+        //         jogador = buscaJogadorCampoDef(9 - casaAlvo - 2)[0];
+        //     }
+        // }
+        // invertePosse(jogador);
+        printaAcao(goleiro.nome+' põe a bola em jogo ');
+        rifaBola(casaAlvo); 
 
 
-        printaAcao(goleiro.nome+' erra o lançamento, e a bola está com '+jogador.nome);
+        // printaAcao(goleiro.nome+' erra o lançamento, e a bola está com '+jogador.nome);
     }
 
 }

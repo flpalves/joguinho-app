@@ -109,7 +109,8 @@ function printaAcao(jogada) {
     var p = document.createElement('p');
     var texto = document.createTextNode(jogo.tempo.minuto + '" ' + jogada + '('+ jogo.posseBola.posicao +')');
     p.appendChild(texto);
-    document.getElementById("result").appendChild(p).setAttribute("style", "background:" + jogo[jogo.posseBola.timeAtk].cores.principal + "; color:" + jogo[jogo.posseBola.timeAtk].cores.secundaria + "; border: 1px solid" + jogo[jogo.posseBola.timeAtk].cores.secundaria + " blue;");
+    var listaJogadas = document.getElementById("result");
+    listaJogadas.insertBefore(p, listaJogadas[0]).setAttribute("style", "background:" + jogo[jogo.posseBola.timeAtk].cores.principal + "; color:" + jogo[jogo.posseBola.timeAtk].cores.secundaria + "; border: 1px solid" + jogo[jogo.posseBola.timeAtk].cores.secundaria + " blue;");
 }
 
 function initStats(){
